@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-sm">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Brand -->
+            <div class="col-sm-3">
+                <a class="navbar-brand" href="#">
+                    <h4><a style="color: rgb(66, 133, 244);">C</a><a style="color: rgb(219, 68, 55);">a</a><a
+                            style="color: rgb(244, 180, 0);">o</a><a style="color: rgb(66, 133, 244);">s</a> <a
+                            style="color: white; font-size: 20px; font-family: sans-serif;">News</a></h4>
+                </a>
+            </div>
+            <!-- Buscador -->
+            <div class="col-sm-6">
+                <div class="input-group">
+                    <div class="input-group-append">
+                        <button type="button" class="btn">Buscar</button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Busca temas, ubicaciones y autores">
+                </div>
+            </div>
+            <!-- Links -->
+            <div class="col-sm-3">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Dropdown link
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Carrusel -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="la.jpg" alt="Los Angeles">
+            </div>
+            <div class="carousel-item">
+                <img src="chicago.jpg" alt="Chicago">
+            </div>
+            <div class="carousel-item">
+                <img src="ny.jpg" alt="New York">
+            </div>
+        </div>
+        <!-- Controles izquierda y derecha -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- Cuerpo -->
+    <div class="container-sm p-3 my-3">
+        <div class="row">
+            <div class="col-sm-1 border">col-sm-1</div>
+            <div class="col-sm-6 border">col-sm-6</div>
+            <div class="col-sm-4 border">col-sm-4</div>
+            <div class="col-sm-1 border">col-sm-1</div>
+        </div>
+    </div>
+</body>
+
+</html>

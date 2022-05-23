@@ -1,0 +1,163 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <!-- Navbar -->
+    <div class="container-sm">
+        <nav class="navbar navbar-expand-sm bg-light navbar-light"
+            style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <!-- Brand -->
+            <div class="col-sm-3">
+                <a class="navbar-brand" href="#">
+                    <h4><a style="color: rgb(66, 133, 244);">C</a><a style="color: rgb(219, 68, 55);">a</a><a
+                            style="color: rgb(244, 180, 0);">o</a><a style="color: rgb(66, 133, 244);">s</a> <a
+                            style="color: grey; font-size: 20px; font-family: sans-serif;">News</a></h4>
+                </a>
+            </div>
+            <!-- Browser -->
+            <div class="col-sm-6">
+                <div class="input-group">
+                    <div class="input-group-append">
+                        <button type="button" class="btn">Buscar</button>
+                    </div>
+                    <input list="browsers" class="form-control" placeholder="Busca temas, ubicaciones y autores">
+                    <datalist id="browsers">
+                        <option value="Noticias destacadas">
+                        <option value="Internacional">
+                        <option value="Entretenimiento">
+                        <option value="Deportes">
+                        <option value="Conoce a nuestros periodistas">
+                    </datalist>
+                </div>
+            </div>
+            <!-- Links -->
+            <div class="col-sm-3">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Periodista</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Categoría</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../index3/noticia1.html">Deporte</a>
+                            <a class="dropdown-item" href="../index3/noticia2.html">Espectáculo</a>
+                            <a class="dropdown-item" href="../index3/noticia3.html">Social</a>
+                            <a class="dropdown-item" href="#">Entretenimiento</a>
+                        </div>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Iniciar sesión</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../index8/sesion.html">Periodista</a>
+                            <a class="dropdown-item" href="../index8/sesionAdministrador.html">Administrador</a>
+                            <a class="dropdown-item" href="../index6/contacto.html">Contacto</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--CATEGORIA-->
+    <div class="container p-3 my-3">
+        Espectáculo
+    </div>
+    <!--TITULO-->
+    <div class="container p-3 my-3 bg-dark text-white">
+        <h2>¿Cuántos feriados quedan este 2022?: La mayoría serán en días laborales</h2>
+    </div>
+    <!--IMAGEN-->
+    <div class="container p-3 my-3">
+        <img src="../images/calendario.jpg" class="mx-auto d-block" alt="imagen">
+    </div>
+    <!--TEXTO-->
+    <div class="container p-3 my-3 border">
+        <div class="row">
+            <div class="col-sm-12">
+                <h4>¿Qué pasó?</h4>
+                <p style="text-align: justify;">El sábado 21 de mayo se conmemora el Día de las Glorias Navales, feriado
+                    que no es de carácter irrenunciable para la legislación chilena. En concreto, este día es destinado
+                    en Chile para recordar el Combate Naval de Iquique, hecho ocurrido en 1897 y que desde 1915 se
+                    conmemora en el país. Asi mismo, esta es una más de las fechas que son una oportunidad para
+                    entregarle un descanso a los trabajadores y trabajadoras de nuestro país, pese a que este año cayó
+                    un día sábado. Por ello, cabe preguntarse: ¿cuántos feriados quedan? Descontando este día, son 11
+                    los festivos que restan en el país, y solo tres son irrenunciables, es decir, jornadas en que el
+                    trabajador del comercio no puede ejercer su labor, salvo algunas excepciones. Se debe considerar
+                    que, de todos estos feriados, 8 corresponden a días hábiles, superando en número a los fines de
+                    semana.</p>
+            </div>
+            <div class="col-sm-12">
+                <h4>¿Cuáles son los feriados que quedan en este 2022?</h4> <br>
+                <table class="table">
+                    <tr>
+                        <th scope="row">Martes 21 de junio:</th>
+                        <td>Día Nacional de los Pueblos Indígenas.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lunes 27 de junio:</th>
+                        <td>San Pedro y San Pablo.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sábado 16 de julio:</th>
+                        <td>Día de la Virgen del Carmen.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lunes, 15 de agosto:</th>
+                        <td>Asunción de la Virgen.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Domingo 18 de septiembre (Irrenunciable):</th>
+                        <td>Independencia Nacional.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lunes 19 de septiembre (Irrenunciable):</th>
+                        <td>Día de las Glorias del Ejército.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lunes 10 de octubre:</th>
+                        <td>Encuentro de Dos Mundos.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lunes 31 de octubre:</th>
+                        <td> Día de las Iglesias Evangélicas y Protestantes.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Martes 1 de noviembre:</th>
+                        <td>Día de Todos los Santos.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Jueves 8 de diciembre:</th>
+                        <td>Inmaculada Concepción.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Domingo 25 de diciembre (Irrenunciable):</th>
+                        <td>Navidad.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--COMENTARIO-->
+    <div class="container p-3 my-3 border">
+        <div class="form-group">
+            <label for="comment">Comentarios:</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+    </div>
+</body>
+
+</html>
