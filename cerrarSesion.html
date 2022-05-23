@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Acceso: Cuentas de Caos</title>
+    <title>Cerrar sesión</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -29,30 +29,17 @@
                         </div>
                         <div
                             style="font-family: sans-serif; font-size: 16px; font-weight: 400; letter-spacing: 0.1px; line-height: 1.5; text-align: center;">
-                            <h4>Iniciar sesion</h4>
+                            <h4>Has cerrado sesión</h4>
                         </div>
                         <div
                             style="font-family: sans-serif; font-size: 16px; font-weight: 400; letter-spacing: 0.1px; line-height: 1.5; text-align: center;">
-                            Utiliza tu cuenta Caos
+                            Has cerrado la sesión. Debes volver a iniciar sesión para usar Caos News
                         </div>
                     </div>
                     <div class="container-sm p-3 my-3">
-                        <form id="form" action="/action_page.php">
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email" id="email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" placeholder="Introduce tu password" id="pwd"
-                                    required>
-                                <button type="button" class="btn btn-link"><a href="#"
-                                        style="font-family: sans-serif;">¿Has
-                                        olvidado tu password?</a></button>
-                            </div>
-                            <button type="button" class="btn btn-link">
-                                <a href="../index10/registro.html">Crear cuenta</a>
-                            </button>
-                            <button type="submit" class="btn btn-primary" style="float: right;">
-                                <a href="../vistaUsuario/agregarNoticia.html" style="color: white;">Iniciar sesión</a>
+                        <form action="">
+                            <button type="button" class="btn btn-primary" style="float: right;">
+                                <a href="index1/principal.html" style="color: white;">Volver a la página principal</a>
                             </button>
                         </form>
                     </div>
@@ -61,24 +48,6 @@
             <div class="col-sm-3"></div>
         </div>
     </div>
-</body>
-<script>
-    $(document).ready(function () {
-        $("#form").validate({
-            rules: {
-                email: {
-                    required: true,
-                    minlength: 10
-                },
-                pwd: {
-                    required: true,
-                    number: true,
-                    minlength: 8
-                },
-            }
-        });
-    });
-</script>
 </body>
 
 </html>
