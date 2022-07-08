@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="container">
+    <div class="card">
+        <div class="container">
+            <h1 style="text-align: justify;">
+                Llega la bicicleta de hidrógeno, una innovadora alternativa de movilidad
+            </h1>
+        </div>
+        <div class="container">
+            6 de Julio, 2022
+        </div>
+        <div class="container">
+            Ciencia y tecnología
+        </div>
+        <br>
+        <center>
+            <div class="container">
+                <img src="{% static 'img/bicicleta.jpg' %}" width="50%">
+            </div>
+        </center>
+        <br>
+        <div class="container">
+            <p style="text-align: justify;">
+                En el caso de la movilidad, la batalla se está dando entre las baterías eléctricas y las pilas de
+                hidrógeno. Por ahora, la electricidad va ganando la partida, pero el hidrógeno está lejos de haber
+                tirado la toalla como fuente de energía verde. Un ejemplo es la innovadora bicicleta de hidrógeno
+                diseñada por una empresa holandesa en colaboración con un productor de pilas de hidrógeno
+                australiano.
+            </p>
+        </div>
+    </div>
+    <br>
+</div>
+{% endblock %}

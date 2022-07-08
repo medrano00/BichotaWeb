@@ -1,0 +1,43 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block js %}
+{% endblock %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h3>Bandeja de entrada</h3>
+            <br>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Asunto</th>
+                        <th>Mensaje</th>
+                        <th>Tipo de consulta</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    {% for c in data %}
+                    <tr>
+                        <td>{{ c.nombre }}</td>
+                        <td>{{ c.asunto }}</td>
+                        <td>{{ c.mensaje }}</td>
+                        <td>{{ c.tipo_consulta }}</td>
+                        <td>
+                            <a href="{% url 'eliminar_mensaje' c.id %}" class="btn btn-danger">Eliminar</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

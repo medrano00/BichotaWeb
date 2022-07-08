@@ -1,0 +1,44 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="container">
+    <div class="card">
+        <div class="container">
+            <h1 style="text-align: justify;">
+                Así no se puede: Sueldo de Arturo Vidal en Flamengo es igual a lo que Colo Colo, gasta en la
+                mitad de su plantel
+            </h1>
+        </div>
+        <div class="container">
+            6 de Julio, 2022
+        </div>
+        <div class="container">
+            Farándula
+        </div>
+        <br>
+        <center>
+            <div class="container">
+                <img src="{% static 'img/vidal.jpg' %}" width="50%">
+            </div>
+        </center>
+        <br>
+        <div class="container">
+            <p style="text-align: justify;">
+                Arturo Vidal revolucionó Río de Janeiro. El King llegó a la ciudad brasileña para presenciar el
+                partido entre Flamengo y Deportes Tolima por Copa Libertadores. Sin embargo, sus reales motivos para
+                estar en suelo carioca eran otros: dejar todo acordado para ser el próximo fichaje del Mengao.
+            </p>
+        </div>
+    </div>
+    <br>
+</div>
+{% endblock %}

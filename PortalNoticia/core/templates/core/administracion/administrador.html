@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block js %}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">
+                        Bandeja de entrada
+                    </h3>
+                    <a href="{% url 'mensaje_contacto' %}" class="btn btn-info">Recibidos</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">
+                        Coberturas
+                    </h3>
+                    <a href="{%  url 'listar_noticia' %}" class="btn btn-info">Ver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% load crispy_forms_tags %}
+
+{% endblock %}

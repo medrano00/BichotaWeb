@@ -1,0 +1,52 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+<div class="container">
+    <div class="card">
+        <div class="container">
+            <h1 style="text-align: justify;">
+                Cámaras de tránsito captaron el momento en que JC Rodríguez escapa a toda velocidad de intento
+                de encerrona
+            </h1>
+        </div>
+        <div class="container">
+            6 de Julio, 2022
+        </div>
+        <div class="container">
+            Farándula
+        </div>
+        <br>
+        <center>
+            <div class="container">
+                <img src="{% static 'img/jc.jpg' %}" width="50%">
+            </div>
+        </center>
+        <br>
+        <div class="container">
+            <p style="text-align: justify;">
+                La noche del miércoles luego de que el comunicador y conductor de Radio Bío Bío, Julio César
+                Rodríguez sufriera un doble intento de encerrona en Providencia, se dio a conocer que la banda
+                acusada habrían comenzado un tour delictual por la comuna.
+            </p>
+            <p style="text-align: justify;">
+                El periodista relató que transitaba en su automóvil por la calle Huelén, cuando durante una luz
+                roja, los ocupantes de un vehículo Audi que estaba al frente de el, se bajaron en ese momento, Julio
+                César supo que se trataba de una encerrona, por lo que escapó a toda velocidad, esquivando el
+                vehículo y la banda, donde se tuvo que pasar el semáforo.
+            </p>
+        </div>
+    </div>
+    <br>
+</div>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="container">
+    <div class="card">
+        <div class="container">
+            <h1 style="text-align: justify;">
+                Karol G visita la fábrica de Ferrari y sube por primera vez un Formula 1
+            </h1>
+        </div>
+        <div class="container">
+            6 de Julio, 2022
+        </div>
+        <div class="container">
+            Entretenimiento
+        </div>
+        <br>
+        <center>
+            <div class="container">
+                <img src="{% static 'img/karolg.jpg' %}" width="50%">
+            </div>
+        </center>
+        <br>
+        <div class="container">
+            <p style="text-align: justify;">
+                Karol G compartió en su cuenta de Instagram una serie de fotos y videos de su visita a la fábrica de
+                Ferrari en Italia. La cantante colombiana también tuvo la oportunidad de ponerse al volante de un
+                auto Formula 1 con el piloto español Carlos Sainz.
+            </p>
+        </div>
+    </div>
+    <br>
+</div>
+{% endblock %}

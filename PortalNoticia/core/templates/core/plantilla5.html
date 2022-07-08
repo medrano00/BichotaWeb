@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="container">
+    <div class="card">
+        <div class="container">
+            <h1 style="text-align: justify;">
+                Hecho en Chile: presentan el primer bus eléctrico construido en nuestro país
+            </h1>
+        </div>
+        <div class="container">
+            7 de Julio, 2022
+        </div>
+        <div class="container">
+            Chile
+        </div>
+        <br>
+        <center>
+            <div class="container">
+                <img src="{% static 'img/bus.jpg' %}" width="50%">
+            </div>
+        </center>
+        <br>
+        <div class="container">
+            <p style="text-align: justify;">
+                Este jueves se presentó el primer bus eléctrico construido en Chile, una creación de la empresa
+                nacional Reborn Electric con sede en Rancagua, en la región de O'Higgins. El Ministerio de
+                Transportes y Telecomunicaciones autorizó la circulación de este bus el que “demuestra que el país
+                es capaz de avanzar hacia una movilidad sustentable", precisó el líder de esta cartera, Juan Carlos
+                Muñoz.
+            </p>
+        </div>
+    </div>
+    <br>
+</div>
+{% endblock %}

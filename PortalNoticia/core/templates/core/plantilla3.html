@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="container">
+    <div class="card">
+        <div class="container">
+            <h1 style="text-align: justify;">
+                Cerró en $974: Así ha variado el precio del dólar este 2022
+            </h1>
+        </div>
+        <div class="container">
+            7 de Julio, 2022
+        </div>
+        <div class="container">
+            Internacional
+        </div>
+        <br>
+        <center>
+            <div class="container">
+                <img src="{% static 'img/dolar.jpg' %}" width="50%">
+            </div>
+        </center>
+        <br>
+        <div class="container">
+            <p style="text-align: justify;">
+                El dólar alcanzó un nuevo máximo histórico al llegar a los $1.000, pero viene al alza desde hace ya
+                varios meses debido a diferentes factores, como la inflación y la guerra en Ucrania. En ese sentido,
+                esta jornada finalmente la moneda estadounidense cerró en $974, sumando una nueva variación a su
+                precio. En el siguiente video, podrás conocer los valores que ha alcanzado el dólar en el último
+                tiempo.
+            </p>
+        </div>
+    </div>
+    <br>
+</div>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="container">
+    <div class="card">
+        <div class="container">
+            <h1 style="text-align: justify;">
+                “Pedazo de hijo de p...”: al Tano Pasman se le salió la cadena insultando a Roberto Tobar
+            </h1>
+        </div>
+        <div class="container">
+            6 de Julio, 2022
+        </div>
+        <div class="container">
+            Entretenimiento
+        </div>
+        <br>
+        <center>
+            <div class="container">
+                <img src="{% static 'img/tano.jpg' %}" width="50%">
+            </div>
+        </center>
+        <br>
+        <div class="container">
+            <p style="text-align: justify;">
+                Y es que tras la controvertida decisión que tomó el árbitro chileno al anular el gol de Matías
+                Suárez, la hinchada local fue una tormenta de insultos en contra del juez del partido.
+            </p>
+            <p style="text-align: justify;">
+                En ese contexto, el Tano Pasman fue captado en una de las tribunas del Monumental lanzando insultos
+                de grueso calibre contra Tobar. “Pedazo de hijo de p..., la conch...”, gritó el hincha viral de
+                River.
+            </p>
+            <p style="text-align: justify;">
+                “La re que te contra conch...”, agregó, junto con darle golpes tanto a los asientos como a la
+                superficie del estadio. Estaba totalmente sacado.
+            </p>
+            <p style="text-align: justify;">
+                Por ello, una de sus hijas que lo acompañaba en la tribuna le pidió que se calmara. “Papá, te va a
+                dar algo”, le dijo.
+            </p>
+        </div>
+    </div>
+    <br>
+</div>
+{% endblock %}

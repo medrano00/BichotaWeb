@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<br>
+<br>
+<div class="col-12 col-md-6 offset-md-3">
+    <div class="card">
+        <div class="card-body">
+            <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    &nbsp;
+                    <button type="reset" value="Restablecer" class="btn btn-danger">Restablecer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+{% endblock %}

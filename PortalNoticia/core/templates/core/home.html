@@ -1,0 +1,258 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+        width: 50%;
+        height: 50%;
+    }
+</style>
+
+<div class="container" id="myDIV">
+    <div class="row">
+        <div class="col-sm-8">
+            <!-- Resumen de noticias -->
+            <h3 class="" style="font-family: Arial, Helvetica, sans-serif;">Resumen de noticias</h3>
+        </div>
+        <div class="col-sm-4" style="text-align: center;">
+            <div class="card" id="weather">
+                <h1 id="location" style="font-size: .75rem; font-family: Arial; color: #80868b;"></h1>
+                <h1 id="temp" style="font-size: 1.5rem; font-family: Arial;"></h1>
+                <a href="https://openweathermap.org/city/3871336" style="font-size: .75rem; font-family: Arial;">Más en
+                    OpenWeather</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="card">
+                <div class="card-body">
+                    <!-- Noticias destacadas -->
+                    <h5 class="card-title" style="font-family: Arial, Helvetica, sans-serif;">Noticias destacadas</h5>
+                    <hr>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Cámaras de tránsito captaron el momento en que JC Rodríguez escapa a toda
+                        velocidad de intento de encerrona</h4>
+                    <p class="card-text">"Iba manejando seguro", comentó el conductor de Contigo en la Mañana, quien
+                        debió saltarse un rojo y apretar a fondo el acelerador para evitar una doble encerrona durante
+                        la noche de este miércoles.</p>
+                    <a href="{% url 'plantilla1' %}">
+                        <button type="button" class="btn btn-outline-light text-dark btn-block"
+                            style="background: #faf9f9;">
+                            Cobertura completa
+                        </button>
+                    </a>
+                    <hr>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Así no se puede: Sueldo de Arturo Vidal en Flamengo es igual a lo que Colo
+                        Colo gasta en la mitad de su plantel</h4>
+                    <p class="card-text">Arturo Vidal definió su futuro y, pese a que todavía no es oficializado
+                        formalmente, todo indica que será el nuevo jugador del Flamengo de Brasil.</p>
+                    <a href="{% url 'plantilla2' %}">
+                        <button type="button" class="btn btn-outline-light text-dark btn-block"
+                            style="background: #faf9f9;">
+                            Cobertura completa
+                        </button>
+                    </a>
+                    <hr>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Cerró en $974: Así ha variado el precio del dólar este 2022</h4>
+                    <p class="card-text">La moneda estadounidense alcanzó un nuevo máximo histórico al llegar a los
+                        $1.000 la mañana de este miércoles, aunque su alza viene desde hace varios meses debido a
+                        factores como la inflación y la guerra en Ucrania.</p>
+                    <a href="{% url 'plantilla3' %}">
+                        <button type="button" class="btn btn-outline-light text-dark btn-block"
+                            style="background: #faf9f9;">
+                            Cobertura completa
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <!-- Selecciones para ti -->
+                    <h5 class="card-title" style="font-family: Arial, Helvetica, sans-serif;">Selecciones para ti</h5>
+                    <hr>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">JBA: All Star Battle R saldrá el 2 de septiembre</h4>
+                    <p class="card-text">El juego contará con una edición edición digital deluxe y una edición
+                        coleccionista. Todas las versiones del juego, con excepción de la versión de Nintendo Switch, ya
+                        están disponible para reservar.</p>
+                    <a href="#" class="card-link">
+                        <button type="button" class="btn btn-outline-light text-dark btn-block"
+                            style="background: #faf9f9;">
+                            Cobertura completa
+                        </button>
+                    </a>
+                    <hr>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">“Dragon Ball Z”: cuál es el origen del ejército de Freezer</h4>
+                    <p class="card-text">La primera vez que los fanáticos de “Dragon Ball” vieron a Freezer fue en
+                        “Dragon Ball Z”. El villano apareció junto a un ejército prácticamente invencible. ¿Pero, fue él
+                        quien lo formó? Conoce AQUÍ la verdadera historia</p>
+                    <a href="#" class="card-link">
+                        <button type="button" class="btn btn-outline-light text-dark btn-block"
+                            style="background: #faf9f9;">
+                            Cobertura completa
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    <br>
+    <br>
+    <center>
+        <h3 style="font-family: Arial, Helvetica, sans-serif;">Novedades</h3>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'img/dio.jpg' %}">
+                </div>
+                <div class="carousel-item">
+                    <a href="{% url 'plantilla4' %}">
+                        <img src="{% static 'img/baleado.jpg' %}">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <img src="#">
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </center>
+    <!-- Tus temas -->
+    <h3 class="py-2" style="font-family: Arial, Helvetica, sans-serif;">Tus temas</h3>
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Chile</h4>
+                    <p class="card-text">Carabinero fue herido de bala en La Cisterna</p>
+                    <a href="{% url 'plantilla4' %}">
+                        <button type="button" class="btn btn-outline-light text-dark btn-block"
+                            style="background: #faf9f9;">
+                            Cobertura completa
+                        </button>
+                    </a>
+                    <hr>
+                    <p class="card-text">Hecho en Chile: presentan el primer bus eléctrico construido en nuestro país
+                    </p>
+                    <a href="{% url 'plantilla5' %}">
+                        <button type="button" class="btn btn-outline-light text-dark btn-block"
+                            style="background: #faf9f9;">
+                            Cobertura completa
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Ciencia y tecnología</h4>
+                    <p class="card-text">Llega la bicicleta de hidrógeno, una innovadora alternativa de movilidad</p>
+                    <a href="{% url 'plantilla6' %}">
+                        <button type="button" class="btn btn-outline-light text-dark btn-block"
+                            style="background: #faf9f9;">
+                            Cobertura completa
+                        </button>
+                    </a>
+                    <hr>
+                    <p class="card-text">Desarrollan la microcámara que utilizarán los nanorobots</p>
+                    <a href="{% url 'plantilla7' %}">
+                        <button type="button" class="btn btn-outline-light text-dark btn-block"
+                            style="background: #faf9f9;">
+                            Cobertura completa
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Entretenimiento</h4>
+                    <p class="card-text">Karol G visita la fábrica de Ferrari y sube por primera vez un Formula 1</p>
+                    <a href="{% url 'plantilla8' %}">
+                        <button type="button" class="btn btn-outline-light text-dark btn-block"
+                            style="background: #faf9f9;">
+                            Cobertura completa
+                        </button>
+                    </a>
+                    <hr>
+                    <p class="card-text">“Pedazo de hijo de p...”: al Tano Pasman se le salió la cadena insultando a
+                        Roberto Tobar</p>
+                    <a href="{% url 'plantilla9' %}">
+                        <button type="button" class="btn btn-outline-light text-dark btn-block"
+                            style="background: #faf9f9;">
+                            Cobertura completa
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+
+<script lang="text/javascript">
+    function weatherBalloon(cityID) {
+        var key = '5fbce9a215b5d95d5d27c6649cc0b34b';
+        fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID + '&appid=' + key)
+            .then(function (resp) { return resp.json() }) // Convert data to json
+            .then(function (data) {
+                drawWeather(data);
+            })
+            .catch(function () {
+                // catch any errors
+            });
+    }
+    function drawWeather(d) {
+        var celcius = Math.round(parseFloat(d.main.temp) - 273.15);
+        var fahrenheit = Math.round(((parseFloat(d.main.temp) - 273.15) * 1.8) + 32);
+
+        ///document.getElementById('description').innerHTML = d.weather[0].description;
+        document.getElementById('temp').innerHTML = celcius + '&deg;';
+        document.getElementById('location').innerHTML = d.name;
+
+        if (description.indexOf('rain') > 0) {
+            document.body.className = 'rainy';
+        } else if (description.indexOf('cloud') > 0) {
+            document.body.className = 'cloudy';
+        } else if (description.indexOf('sunny') > 0) {
+            document.body.className = 'sunny';
+        }
+    }
+
+    window.onload = function () {
+        weatherBalloon(3871336);
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="container">
+    <div class="card">
+        <div class="container">
+            <h1 style="text-align: justify;">
+                Carabinero fue herido de bala en La Cisterna
+            </h1>
+        </div>
+        <div class="container">
+            7 de Julio, 2022
+        </div>
+        <div class="container">
+            Chile
+        </div>
+        <br>
+        <center>
+            <div class="container">
+                <img src="{% static 'img/baleado.jpg' %}" width="50%">
+            </div>
+        </center>
+        <br>
+        <div class="container">
+            <p style="text-align: justify;">
+                Un carabinero resultó herido de bala luego de que un grupo de policías recibió un número
+                indeterminado de disparos por parte de un automóvil que circulaba a la altura de la estación
+                intermodal La Cisterna.
+                Los policías que se movilizaban hacia un procedimiento por violencia intrafamiliar, se dirigieron
+                hacia la zona luego de que escucharon balazos en el sector.
+                El carabinero herido presentó lesiones en la boca y fue trasladado al Hospital de Carabineros, donde
+                se encuentra fuera de riesgo vital.
+            </p>
+        </div>
+    </div>
+    <br>
+</div>
+{% endblock %}

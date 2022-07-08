@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="container">
+    <div class="card">
+        <div class="container">
+            <h1 style="text-align: justify;">
+                Desarrollan la microcámara que utilizarán los nanorobots
+            </h1>
+        </div>
+        <div class="container">
+            6 de Julio, 2022
+        </div>
+        <div class="container">
+            Ciencia y tecnología
+        </div>
+        <br>
+        <center>
+            <div class="container">
+                <img src="{% static 'img/camara.jpg' %}" width="50%">
+            </div>
+        </center>
+        <br>
+        <div class="container">
+            <p style="text-align: justify;">
+                La nanorobótica, tal como sucede con el grafeno, es un término que lleva años en boca de los
+                investigadores, pero que aún no ha explotado a escala de producción industrial. Todo el mundo es
+                consciente de su potencial, pero los obstáculos técnicos siguen ahí. Por suerte, a paso firme, la
+                investigación avanza. El último invento que permitiría dar un salto de gigante a los robots más
+                minúsculos del mundo es una cámara que apenas tiene el tamaño de un grano de sal.
+            </p>
+        </div>
+    </div>
+    <br>
+</div>
+{% endblock %}
